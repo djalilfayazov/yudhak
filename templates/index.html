@@ -45,18 +45,18 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">Mentor</a></h1>
+      <h1 class="logo me-auto"><a href="/">Mentor</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href="index/" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="trainers.html">Trainers</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
+          <li><a class="active" href="/">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'courses' %}">Courses</a></li>
+          <li><a href="{% url 'trainers' %}">Trainers</a></li>
+          <li><a href="{% url 'events' %}">Events</a></li>
+          <li><a href="{% url 'pricing' %}">Pricing</a></li>
 
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -75,12 +75,12 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+      <a href="{% url 'courses' %}" class="get-started-btn">Get Started</a>
 
     </div>
   </header><!-- End Header -->
@@ -90,7 +90,7 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Learning Today,<br>Leading Tomorrow</h1>
       <h2>We are team of talented designers making websites with Bootstrap</h2>
-      <a href="courses.html" class="btn-get-started">Get Started</a>
+      <a href="{% url 'courses' %}" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
@@ -169,7 +169,7 @@
                 Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
               </p>
               <div class="text-center">
-                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="about/" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@
                   <p class="price">$169</p>
                 </div>
 
-                <h3><a href="course-details.html">Website Design</a></h3>
+                <h3><a href="course-details/">Website Design</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -333,7 +333,7 @@
                   <p class="price">$250</p>
                 </div>
 
-                <h3><a href="course-details.html">Search Engine Optimization</a></h3>
+                <h3><a href="course-details/">Search Engine Optimization</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
@@ -359,7 +359,7 @@
                   <p class="price">$180</p>
                 </div>
 
-                <h3><a href="course-details.html">Copywriting</a></h3>
+                <h3><a href="course-details/">Copywriting</a></h3>
                 <p>Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                 <div class="trainer d-flex justify-content-between align-items-center">
                   <div class="trainer-profile d-flex align-items-center">
